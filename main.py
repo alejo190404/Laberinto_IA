@@ -5,7 +5,6 @@ from grafo import Grafo
 #Definir funciones
 #Imprimir matriz
 def imprimirMatriz(matriz):
-    print("Matriz:")
     for i in range(len(matriz)):
         for j in range(len(matriz)):
             print(matriz[i][j], end="\t")
@@ -86,7 +85,6 @@ lista_nodos_adyacentes = {}
 visitada = [[0 for j in range(n)] for i in range(n)]
 
 
-print(tieneCaminosAdyacentes([1, 1], visitada, laberinto, n))
 #Generar camino
 caminoProfundidad = grafo.primero_profundidad(inicio, fin)
 print("Camino encontrado:", caminoProfundidad)
